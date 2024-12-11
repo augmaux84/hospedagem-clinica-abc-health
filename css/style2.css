@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    font-weight: 600;
+    padding: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: blue;
+    margin: 0 5px 0 5px;
+} 
+
+main {
+    background-color: white;
+    padding: 20px;
+}
+
+main h2 {
+    margin: 16px;
+}
+
+main div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 16px;
+    gap: 5px;
+}
+
+main div img {
+    height: 160px;
+    width: 240px;
+    margin-bottom: 6px;
+    border-radius: 16px;
+    box-shadow: 2px 2px dimgray;
+    flex-grow: 2;
+}
+
+footer {
+    background-color: aliceblue;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    color: blue;
+}
+
+@media screen and (max-width: 800px) {
+    main div img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    main div img {
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 589px) {
+    main div img {
+        width: 500px;
+    }
+}
